@@ -9,7 +9,7 @@ destination Kiba::Plus::Destination::MysqlBulk, { :connect_url => DEST_URL,
                                 :table_name => "customers",
                                 :input_file => File.expand_path(File.dirname(__FILE__) + "/data/customer.csv"),
                                 :truncate => true,
-                                :columns => [:id, :email, :first_name, :last_name],
+                                :columns => ["id", "email", "first_name", "last_name"],
                                 :incremental => false
                               }
 post_process do

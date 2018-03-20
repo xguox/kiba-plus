@@ -63,7 +63,7 @@ destination Kiba::Plus::Destination::MysqlBulk, { :connect_url => DEST_URL,
                                 :table_name => "customers",
                                 :input_file => '#{src_csv_path}',
                                 :truncate => true,
-                                :columns => [:id, :email, :first_name, :last_name],
+                                :columns => ["id", "email", "first_name", "last_name"],
                                 :incremental => false
                               }
 
@@ -88,7 +88,7 @@ destination Kiba::Plus::Destination::MysqlBulk, { :connect_url => DEST_URL,
                                 :table_name => "customers",
                                 :input_file => '#{src_csv_with_header_path}',
                                 :truncate => true,
-                                :columns => [:id, :email, :first_name, :last_name],
+                                :columns => ["id", "email", "first_name", "last_name"],
                                 :incremental => false,
                                 :ignore_input_file_header => true
                               }
@@ -121,7 +121,7 @@ destination Kiba::Plus::Destination::PgBulk, { :connect_url => DEST_URL,
                                 :table_name => "customers",
                                 :input_file => '#{src_csv_path_with_pg}',
                                 :truncate => true,
-                                :columns => [:id, :email, :first_name, :last_name],
+                                :columns => ["id", "email", "first_name", "last_name"],
                                 :incremental => false
                               }
 
@@ -152,7 +152,7 @@ destination Kiba::Plus::Destination::PgBulk, { :connect_url => DEST_URL,
                                 :table_name => "customers",
                                 :input_file => '#{src_csv_path_with_pg}',
                                 :truncate => true,
-                                :columns => [:id, :email, :first_name, :last_name],
+                                :columns => ["id", "email", "first_name", "last_name"],
                                 :incremental => false,
                                 :ignore_input_file_header => true
                               }
